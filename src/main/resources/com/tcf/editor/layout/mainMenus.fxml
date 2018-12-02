@@ -80,177 +80,177 @@
                 </MenuItem>
             </items>
         </Menu>
-        <Menu fx:id="edit" mnemonicParsing="false" text="Edit">
+        <Menu fx:id="edit" mnemonicParsing="false" text="%menu.edit">
             <items>
-                <MenuItem fx:id="undo" mnemonicParsing="false" text="undo">
+                <MenuItem fx:id="undo" mnemonicParsing="false" text="%menu.edit.undo">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="Z" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="redo" mnemonicParsing="false" text="redo">
+                <MenuItem fx:id="redo" mnemonicParsing="false" text="%menu.edit.redo">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="Y" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
                 <SeparatorMenuItem />
-                <MenuItem fx:id="cut" mnemonicParsing="false" text="cut">
+                <MenuItem fx:id="cut" mnemonicParsing="false" text="%menu.edit.cut">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="copy" mnemonicParsing="false" text="copy">
+                <MenuItem fx:id="copy" mnemonicParsing="false" text="%menu.edit.copy">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="paste" mnemonicParsing="false" text="paste">
+                <MenuItem fx:id="paste" mnemonicParsing="false" text="%menu.edit.paste">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="delete" mnemonicParsing="false" text="delete">
+                <MenuItem fx:id="delete" mnemonicParsing="false" text="%menu.edit.delete">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="selectAll" mnemonicParsing="false" text="select all">
+                <MenuItem fx:id="selectAll" mnemonicParsing="false" text="%menu.edit.selectAll">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
                 <SeparatorMenuItem />
-                <MenuItem fx:id="find" mnemonicParsing="false" text="find…">
+                <MenuItem fx:id="find" mnemonicParsing="false" text="%menu.edit.find">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="findNext" mnemonicParsing="false" text="find next">
+                <MenuItem fx:id="findNext" mnemonicParsing="false" text="%menu.edit.findNext">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="F3" control="UP" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
-                <MenuItem fx:id="findPrev" mnemonicParsing="false" text="find prev">
+                <MenuItem fx:id="findPrev" mnemonicParsing="false" text="%menu.edit.findPrev">
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="F3" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
                     </accelerator>
                 </MenuItem>
                 <SeparatorMenuItem />
-                <Menu fx:id="copyToClipboard" mnemonicParsing="false" text="copy to clipboard">
+                <Menu fx:id="copyToClipboard" mnemonicParsing="false" text="%menu.edit.copyToClipboard">
                     <items>
-                        <MenuItem fx:id="copyFilePathToClipboard" mnemonicParsing="false" text="copy file path to clipboard" />
-                        <MenuItem fx:id="copyFileNameToClipboard" mnemonicParsing="false" text="copy file name to clipboard" />
-                        <MenuItem fx:id="copyFileTextToClipboard" mnemonicParsing="false" text="copy file text to clipboard" />
-                        <MenuItem fx:id="copyFileDirToClipboard" mnemonicParsing="false" text="copy file dir to clipboard" />
+                        <MenuItem fx:id="copyFilePathToClipboard" mnemonicParsing="false" text="%menu.edit.copyToClipboard.copyFilePathToClipboard" />
+                        <MenuItem fx:id="copyFileNameToClipboard" mnemonicParsing="false" text="%menu.edit.copyToClipboard.copyFileNameToClipboard" />
+                        <MenuItem fx:id="copyFileTextToClipboard" mnemonicParsing="false" text="%menu.edit.copyToClipboard.copyFileTextToClipboard" />
+                        <MenuItem fx:id="copyFileDirToClipboard" mnemonicParsing="false" text="%menu.edit.copyToClipboard.copyFileDirToClipboard" />
                     </items>
                 </Menu>
-                <Menu fx:id="indent" mnemonicParsing="false" text="indent">
+                <Menu fx:id="indent" mnemonicParsing="false" text="%menu.edit.indent">
                     <items>
-                        <MenuItem fx:id="increaseLineIndent" mnemonicParsing="false" text="increase line indent">
+                        <MenuItem fx:id="increaseLineIndent" mnemonicParsing="false" text="%menu.edit.indent.increaseLineIndent">
                             <accelerator>
                                 <KeyCodeCombination alt="UP" code="TAB" control="UP" meta="UP" shift="UP" shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="decreaseLineIndent" mnemonicParsing="false" text="decrease line indent">
+                        <MenuItem fx:id="decreaseLineIndent" mnemonicParsing="false" text="%menu.edit.indent.decreaseLineIndent">
                             <accelerator>
                                 <KeyCodeCombination alt="UP" code="TAB" control="UP" meta="UP" shift="DOWN" shortcut="UP" />
                             </accelerator>
                         </MenuItem>
                     </items>
                 </Menu>
-                <Menu fx:id="convertCaseTo" mnemonicParsing="false" text="convert case to">
+                <Menu fx:id="convertCaseTo" mnemonicParsing="false" text="%menu.edit.convertCaseTo.lowercase">
                     <items>
-                        <MenuItem fx:id="uppercase" mnemonicParsing="false" text="uppercase">
+                        <MenuItem fx:id="uppercase" mnemonicParsing="false" text="%menu.edit.convertCaseTo.uppercase">
                             <accelerator>
                                 <KeyCodeCombination alt="UP" code="U" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="lowercase" mnemonicParsing="false" text="lowercase">
+                        <MenuItem fx:id="lowercase" mnemonicParsing="false" text="%menu.edit.convertCaseTo.lowercase">
                             <accelerator>
                                 <KeyCodeCombination alt="UP" code="U" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="togglecase" mnemonicParsing="false" text="togglecase">
+                        <MenuItem fx:id="togglecase" mnemonicParsing="false" text="%menu.edit.convertCaseTo.togglecase">
                             <accelerator>
                                 <KeyCodeCombination alt="DOWN" code="U" control="UP" meta="UP" shift="UP" shortcut="UP" />
                             </accelerator>
                         </MenuItem>
                     </items>
                 </Menu>
-                <Menu fx:id="lineOptions" mnemonicParsing="false" text="line options">
+                <Menu fx:id="lineOptions" mnemonicParsing="false" text="%menu.edit.lineOptions">
                     <items>
-                        <MenuItem fx:id="duplicateCurrentLine" mnemonicParsing="false" text="duplicate current line">
+                        <MenuItem fx:id="duplicateCurrentLine" mnemonicParsing="false" text="%menu.edit.lineOptions.duplicateCurrentLine">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="UP" code="D"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="splitLines" mnemonicParsing="false" text="split lines">
+                        <MenuItem fx:id="splitLines" mnemonicParsing="false" text="%menu.edit.lineOptions.splitLines">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="UP" code="I"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="joinLines" mnemonicParsing="false" text="join lines">
+                        <MenuItem fx:id="joinLines" mnemonicParsing="false" text="%menu.edit.lineOptions.joinLines">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="UP" code="J"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="moveUpCurrentLines" mnemonicParsing="false" text="move up current lines">
+                        <MenuItem fx:id="moveUpCurrentLines" mnemonicParsing="false" text="%menu.edit.lineOptions.moveUpCurrentLines">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="DOWN" code="UP"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="moveDownCurrentLines" mnemonicParsing="false" text="move down current lines">
+                        <MenuItem fx:id="moveDownCurrentLines" mnemonicParsing="false" text="%menu.edit.lineOptions.moveDownCurrentLines">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="DOWN" code="DOWN"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="removeEmptyLines" mnemonicParsing="false" text="remove empty lines">
+                        <MenuItem fx:id="removeEmptyLines" mnemonicParsing="false" text="%menu.edit.lineOptions.removeEmptyLines">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="DOWN" alt="UP" code="DELETE"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="insertBlankLineAboveCurrentLine" mnemonicParsing="false" text="insert blank line above current line">
+                        <MenuItem fx:id="insertBlankLineAboveCurrentLine" mnemonicParsing="false" text="%menu.edit.lineOptions.insertBlankLineAboveCurrentLine">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="DOWN" code="ENTER"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="insertBlankLineBelowCurrentLine" mnemonicParsing="false" text="insert blank line below current line">
+                        <MenuItem fx:id="insertBlankLineBelowCurrentLine" mnemonicParsing="false" text="%menu.edit.lineOptions.insertBlankLineBelowCurrentLine">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="DOWN" alt="DOWN" code="ENTER"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
                     </items>
                 </Menu>
-                <Menu fx:id="comment" mnemonicParsing="false" text="comment/uncomment">
+                <Menu fx:id="comment" mnemonicParsing="false" text="%menu.edit.comment">
                     <items>
-                        <MenuItem fx:id="toggleSingleLineComment" mnemonicParsing="false" text="toggle single line comment">
+                        <MenuItem fx:id="toggleSingleLineComment" mnemonicParsing="false" text="%menu.edit.comment.toggleSingleLineComment">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="UP" alt="UP" code="SLASH"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
-                        <MenuItem fx:id="toggleBlockComment" mnemonicParsing="false" text="toggle block comment">
+                        <MenuItem fx:id="toggleBlockComment" mnemonicParsing="false" text="%menu.edit.comment.toggleBlockComment">
                             <accelerator>
                                 <KeyCodeCombination control="DOWN" shift="DOWN" alt="UP" code="SLASH"  meta="UP"  shortcut="UP" />
                             </accelerator>
                         </MenuItem>
                     </items>
                 </Menu>
-                <Menu fx:id="blankOperations" mnemonicParsing="false" text="blank operations">
+                <Menu fx:id="blankOperations" mnemonicParsing="false" text="%menu.edit.blankOperations">
                     <items>
-                        <MenuItem fx:id="trimTrailingSpace" mnemonicParsing="false" text="trim trailing space" />
-                        <MenuItem fx:id="trimLeadingSpace" mnemonicParsing="false" text="trim leading space" />
-                        <MenuItem fx:id="trimLeadingAndTrailingSpace" mnemonicParsing="false" text="trim leading and trailing space" />
-                        <MenuItem fx:id="tabToSpace" mnemonicParsing="false" text="tab to space" />
-                        <MenuItem fx:id="spaceToTab" mnemonicParsing="false" text="space to tab" />
+                        <MenuItem fx:id="trimTrailingSpace" mnemonicParsing="false" text="%menu.edit.blankOperations.trimTrailingSpace" />
+                        <MenuItem fx:id="trimLeadingSpace" mnemonicParsing="false" text="%menu.edit.blankOperations.trimLeadingSpace" />
+                        <MenuItem fx:id="trimLeadingAndTrailingSpace" mnemonicParsing="false" text="%menu.edit.blankOperations.trimLeadingAndTrailingSpace" />
+                        <MenuItem fx:id="tabToSpace" mnemonicParsing="false" text="%menu.edit.blankOperations.tabToSpace" />
+                        <MenuItem fx:id="spaceToTab" mnemonicParsing="false" text="%menu.edit.blankOperations.spaceToTab" />
                     </items>
                 </Menu>
                 <SeparatorMenuItem />
-                <Menu fx:id="encoding" mnemonicParsing="false" text="encoding">
+                <Menu fx:id="encoding" mnemonicParsing="false" text="%menu.edit.encoding">
                     <items>
-                        <MenuItem fx:id="encodeInANSI" mnemonicParsing="false" text="encode in ANSI" />
-                        <MenuItem fx:id="encodeInGBK" mnemonicParsing="false" text="encode in GBK" />
-                        <MenuItem fx:id="encodeInUTF8" mnemonicParsing="false" text="encode in UTF-8" />
-                        <MenuItem fx:id="encodeInUTF8BOM" mnemonicParsing="false" text="encode in UTF-8 BOM" />
-                        <Menu fx:id="charsets" mnemonicParsing="false" text="charsets">
+                        <MenuItem fx:id="encodeInANSI" mnemonicParsing="false" text="%menu.edit.encoding.encodeInANSI" />
+                        <MenuItem fx:id="encodeInGBK" mnemonicParsing="false" text="%menu.edit.encoding.encodeInGBK" />
+                        <MenuItem fx:id="encodeInUTF8" mnemonicParsing="false" text="%menu.edit.encoding.encodeInUTF8" />
+                        <MenuItem fx:id="encodeInUTF8BOM" mnemonicParsing="false" text="%menu.edit.encoding.encodeInUTF8BOM" />
+                        <Menu fx:id="charsets" mnemonicParsing="false" text="%menu.edit.encoding.charsets">
                             <items>
                                 <MenuItem mnemonicParsing="false" text="code1" />
                                 <MenuItem mnemonicParsing="false" text="code1" />
@@ -263,31 +263,31 @@
                             </items>
                         </Menu>
                         <SeparatorMenuItem />
-                        <MenuItem fx:id="convertToANSI" mnemonicParsing="false" text="convert to ANSI" />
-                        <MenuItem fx:id="convertToGBK" mnemonicParsing="false" text="convert to GBK" />
-                        <MenuItem fx:id="convertToUTF8" mnemonicParsing="false" text="convert to UTF-8" />
-                        <MenuItem fx:id="convertToUTF8BOM" mnemonicParsing="false" text="convert to UTF-8 BOM" />
+                        <MenuItem fx:id="convertToANSI" mnemonicParsing="false" text="%menu.edit.encoding.convertToANSI" />
+                        <MenuItem fx:id="convertToGBK" mnemonicParsing="false" text="%menu.edit.encoding.convertToGBK" />
+                        <MenuItem fx:id="convertToUTF8" mnemonicParsing="false" text="%menu.edit.encoding.convertToUTF8" />
+                        <MenuItem fx:id="convertToUTF8BOM" mnemonicParsing="false" text="%menu.edit.encoding.convertToUTF8BOM" />
                     </items>
                 </Menu>
                 <SeparatorMenuItem />
-                <MenuItem fx:id="setReadonly" mnemonicParsing="false" text="set readonly"/>
+                <MenuItem fx:id="setReadonly" mnemonicParsing="false" text="%menu.edit.setReadonly"/>
             </items>
         </Menu>
-        <Menu fx:id="Setting" mnemonicParsing="false" text="setting" >
+        <Menu fx:id="setting" mnemonicParsing="false" text="%menu.setting" >
             <items>
-                <MenuItem fx:id="preferences" mnemonicParsing="false" text="preferences" />
-                <MenuItem fx:id="language" mnemonicParsing="false" text="language" />
-                <MenuItem fx:id="editMainMenu" mnemonicParsing="false" text="edit main menu" />
-                <MenuItem fx:id="editContextMenu" mnemonicParsing="false" text="edit context menu" />
-                <MenuItem fx:id="quickText" mnemonicParsing="false" text="quick text" />
+                <MenuItem fx:id="preferences" mnemonicParsing="false" text="%menu.setting.preferences" />
+                <MenuItem fx:id="language" mnemonicParsing="false" text="%menu.setting.language" />
+                <MenuItem fx:id="editMainMenu" mnemonicParsing="false" text="%menu.setting.editMainMenu" />
+                <MenuItem fx:id="editContextMenu" mnemonicParsing="false" text="%menu.setting.editContextMenu" />
+                <MenuItem fx:id="quickText" mnemonicParsing="false" text="%menu.setting.quickText" />
             </items>
         </Menu>
-        <Menu fx:id="Plugins" mnemonicParsing="false" text="plugins">
-            <MenuItem fx:id="pluginManager" mnemonicParsing="false" text="plugin manager" />
+        <Menu fx:id="plugins" mnemonicParsing="false" text="%menu.plugins">
+            <MenuItem fx:id="pluginManager" mnemonicParsing="false" text="%menu.plugins.pluginManager" />
         </Menu>
-        <Menu mnemonicParsing="false" text="Help">
+        <Menu fx:id="help" mnemonicParsing="false" text="%menu.help">
             <items>
-                <MenuItem fx:id="about" mnemonicParsing="false" text="about" />
+                <MenuItem fx:id="about" mnemonicParsing="false" text="%menu.help.about" />
             </items>
         </Menu>
     </menus>

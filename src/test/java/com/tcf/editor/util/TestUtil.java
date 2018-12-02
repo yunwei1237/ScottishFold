@@ -14,7 +14,7 @@ public class TestUtil {
 
     @Test
     public void loadResources() throws Exception {
-        URL url =  this.getClass().getClassLoader().getResource("plugins/delete.jar");
+        /*URL url =  this.getClass().getClassLoader().getResource("plugins/delete.jar");
         JarFile jarFile = new JarFile(url.getFile());
         //JarFile jarFile = new JarFile("C:\\Users\\Administrator\\IdeaProjects\\ScottishFold\\src\\main\\resources\\plugins\\delete.jar");
         DynamicJarClassLoader loader = new DynamicJarClassLoader(jarFile);
@@ -22,7 +22,7 @@ public class TestUtil {
         SAXReader reader = new SAXReader();
         Document doc = reader.read(inputStream);
         System.out.println(doc.getRootElement().getName());
-        inputStream.close();
+        inputStream.close();*/
     }
     @Test
     public void loadPlugins(){
