@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+<ContextMenu fx:id="contextMenu" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.121">
+   <items>
+       <MenuItem fx:id="cut" mnemonicParsing="false" text="cut">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="X" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+           <graphic>
+               <ImageView>
+                   <image>
+                       <Image url="@../imgs/cut.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </MenuItem>
+       <MenuItem fx:id="copy" mnemonicParsing="false" text="copy">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="C" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+       <MenuItem fx:id="paste" mnemonicParsing="false" text="paste">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="V" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+       <MenuItem fx:id="delete" mnemonicParsing="false" text="delete">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="DELETE" control="UP" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+       <MenuItem fx:id="selectAll" mnemonicParsing="false" text="select all">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="A" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+       <SeparatorMenuItem />
+       <MenuItem fx:id="find" mnemonicParsing="false" text="find…">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="F" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+           <graphic>
+               <ImageView>
+                   <image>
+                       <Image url="@../imgs/find.png" />
+                   </image>
+               </ImageView>
+           </graphic>
+       </MenuItem>
+       <MenuItem fx:id="findNext" mnemonicParsing="false" text="find next">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="F3" control="UP" meta="UP" shift="UP" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+       <MenuItem fx:id="findPrev" mnemonicParsing="false" text="find prev">
+           <accelerator>
+               <KeyCodeCombination alt="UP" code="F3" control="DOWN" meta="UP" shift="DOWN" shortcut="UP" />
+           </accelerator>
+       </MenuItem>
+   </items>
+</ContextMenu>
