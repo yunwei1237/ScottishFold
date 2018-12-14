@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.tcf.com/ScottishFold"
+           xmlns="http://www.tcf.com/ScottishFold"
+           elementFormDefault="qualified">
+    <xs:element name="language">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="languageName" type="xs:string" />
+                <xs:element name="mark" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="color" >
+                                <xs:complexType>
+                                    <xs:attribute name="colorName" type="xs:string" />
+                                    <xs:attribute name="r" type="colorInt" />
+                                    <xs:attribute name="g" type="colorInt" />
+                                    <xs:attribute name="b" type="colorInt" />
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="signs">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="value" minOccurs="0">
+                                            <xs:simpleType>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:pattern value=".+(,.+)*" />
+                                                </xs:restriction>
+                                            </xs:simpleType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="value">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:pattern value=".+(,.+)*" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:simpleType name="colorInt">
+        <xs:restriction base="xs:int" >
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="255" />
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

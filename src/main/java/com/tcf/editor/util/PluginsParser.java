@@ -1,6 +1,5 @@
 package com.tcf.editor.util;
 
-import com.tcf.editor.plugin.Plugin;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import org.dom4j.Document;
@@ -13,7 +12,7 @@ import java.util.Iterator;
 import java.util.List;
 
 public class PluginsParser {
-    public List<Plugin> parse(DynamicJarClassLoader loader){
+    /*public List<Plugin> parse(DynamicJarClassLoader loader){
         //加载配置文件
         SAXReader reader = new SAXReader();
         Document document = null;
@@ -56,5 +55,5 @@ public class PluginsParser {
             }
         }
         return list;
-    }
+    }*/
 }

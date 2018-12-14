@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="171.0" prefWidth="375.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="34.0" prefWidth="375.0">
+         <children>
+            <Label text="查找内容:">
+               <HBox.margin>
+                  <Insets bottom="10.0" top="7.0" />
+               </HBox.margin></Label>
+            <TextField fx:id="findText" prefWidth="180.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin></TextField>
+            <Button fx:id="btnFind" mnemonicParsing="false" text="查找下一个">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="375.0">
+         <children>
+            <Label text="替换为:">
+               <HBox.margin>
+                  <Insets bottom="10.0" right="12.0" top="7.0" />
+               </HBox.margin>
+            </Label>
+            <TextField fx:id="replaceText" prefWidth="180.0">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </TextField>
+            <Button fx:id="btnReplaceNext" mnemonicParsing="false" prefWidth="77.0" text="替换">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="10.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="34.0" prefWidth="383.0">
+         <children>
+            <Button fx:id="btnReplaceAll" alignment="CENTER" mnemonicParsing="false" prefWidth="77.0" text="替换全部">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="251.0" right="5.0" top="5.0" />
+               </HBox.margin></Button>
+         </children></HBox>
+      <HBox layoutX="10.0" layoutY="98.0" prefHeight="50.0" prefWidth="383.0">
+         <children>
+            <CheckBox fx:id="checkCase" mnemonicParsing="false" text="区分大小写">
+               <HBox.margin>
+                  <Insets left="10.0" right="15.0" />
+               </HBox.margin>
+            </CheckBox>
+            <Button fx:id="btnCancel" alignment="CENTER" mnemonicParsing="false" prefWidth="77.0" text="取消">
+               <HBox.margin>
+                  <Insets bottom="5.0" left="145.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="13.0" left="13.0" right="13.0" top="13.0" />
+   </padding>
+</VBox>

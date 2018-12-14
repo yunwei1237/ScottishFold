@@ -1,6 +1,5 @@
 package com.tcf.editor.util;
 
-import com.tcf.editor.plugin.Plugin;
 import javafx.event.EventTarget;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
@@ -20,7 +19,7 @@ import java.util.List;
 import java.util.jar.JarFile;
 
 public class PluginsLoader {
-    public List<DynamicJarClassLoader> loaderJar(){
+    /*public List<DynamicJarClassLoader> loaderJar(){
         List<DynamicJarClassLoader> list = new ArrayList<DynamicJarClassLoader>();
         String path =  this.getClass().getClassLoader().getResource("plugins").getPath();
         File dir = new File(path);
@@ -36,7 +35,7 @@ public class PluginsLoader {
         return list;
     }
     public List<Plugin> parseJar(DynamicJarClassLoader loader){
-        //åŠ è½½é…ç½®æ–‡ä»¶
+        //¼ÓÔØÅäÖÃÎÄ¼ş
         SAXReader reader = new SAXReader();
         Document document = null;
         try {
@@ -44,7 +43,7 @@ public class PluginsLoader {
         } catch (DocumentException e) {
             e.printStackTrace();
         }
-        //è§£æé…ç½®æ–‡ä»¶
+        //½âÎöÅäÖÃÎÄ¼ş
         List<Plugin> list = new ArrayList<Plugin>();
         Element root = document.getRootElement();
         Iterator<Element> plugins = root.element("plugins").elementIterator("plugin");
@@ -81,21 +80,67 @@ public class PluginsLoader {
         }
         return list;
     }
+    public List<Plugin> parseJar(String configPath){
+        //¼ÓÔØÅäÖÃÎÄ¼ş
+        SAXReader reader = new SAXReader();
+        Document document = null;
+        try {
+            document = reader.read(configPath);
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
+        //½âÎöÅäÖÃÎÄ¼ş
+        List<Plugin> list = new ArrayList<Plugin>();
+        Element root = document.getRootElement();
+        Iterator<Element> plugins = root.element("plugins").elementIterator("plugin");
+        while(plugins.hasNext()){
+            Element pluginEle = plugins.next();
+            String parent = null;
+            int index = -1;
+            EventTarget view = null;
+            Class controller = null;
+            //content
+            Element content = pluginEle.element("content");
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            try {
+                fxmlLoader.setController(controller);
+                fxmlLoader.setRoot(controller);
+                view = fxmlLoader.load(this.getClass().getResourceAsStream(content.attributeValue("view")));
+                controller = Class.forName(content.attributeValue("controller"));
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            //location
+            Element location = pluginEle.element("location");
+            Element toolBar = location.element("toolBar");
+            Element mainMenu = location.element("mainMenu");
+            Element contextMenu = location.element("contextMenu");
+
+            if(toolBar != null){
+                list.add(Plugin.getToolBarPlugin(index,view));
+            }else if(mainMenu != null){
+                list.add(Plugin.getMainMenuPlugin(parent,index,view));
+            }else if(contextMenu != null){
+                list.add(Plugin.getContextMenuPlugin(parent,index,view));
+            }
+        }
+        return list;
+    }
     public void addPlugins(BorderPane borderPane){
         for(DynamicJarClassLoader loader:loaderJar()){
             List<Plugin> plugins = parseJar(loader);
             for(Plugin plugin:plugins){
-                if(plugin.location instanceof Plugin.MainMenuLocation){//æ’ä»¶é’ˆå¯¹ä¸»èœå•
+                if(plugin.location instanceof Plugin.MainMenuLocation){//²å¼şÕë¶ÔÖ÷²Ëµ¥
                     MenuBar menuBar = (MenuBar) borderPane.lookup("#menuBar");
                     menuBar.getMenus().get(3).getItems().add((MenuItem)plugin.content);
-                }else if(plugin.location instanceof  Plugin.ContextMenuLocation){//æ’ä»¶é’ˆå¯¹ä¸Šä¸‹æ–‡èœå•
+                }else if(plugin.location instanceof  Plugin.ContextMenuLocation){//²å¼şÕë¶ÔÉÏÏÂÎÄ²Ëµ¥
                     TabPane tabPane = (TabPane)borderPane.lookup("#TabPane");
                     tabPane.getContextMenu().getItems().add((MenuItem)plugin.content);
-                }else if(plugin.location instanceof  Plugin.ToolBarLocation){//æ’ä»¶é’ˆå¯¹å·¥å…·æ 
+                }else if(plugin.location instanceof  Plugin.ToolBarLocation){//²å¼şÕë¶Ô¹¤¾ßÀ¸
                     ToolBar toolBar = (ToolBar)borderPane.lookup("#toolBar");
                     toolBar.getItems().add((Node)plugin.content);
                 }
             }
         }
-    }
+    }*/
 }

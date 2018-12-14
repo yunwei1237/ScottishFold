@@ -6,7 +6,9 @@
             minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0"
             xmlns="http://javafx.com/javafx/8"
             xmlns:fx="http://javafx.com/fxml/1"
-            stylesheets="@css/style.css">
+            stylesheets="@main/css/style.css"
+            fx:controller="com.tcf.editor.controller.MainController"
+>
    <center>
       <SplitPane dividerPositions="0.8552278820375335" orientation="VERTICAL" prefHeight="200.0" prefWidth="160.0" BorderPane.alignment="CENTER">
         <items>
@@ -21,7 +23,7 @@
                         </AnchorPane>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                            <children>
-                            <fx:include source="layout/tabs.fxml" />
+                            <fx:include source="main/layout/tabs.fxml" />
                            </children>
                         </AnchorPane>
                         <AnchorPane prefHeight="296.0" prefWidth="115.0">
@@ -48,8 +50,8 @@
    <top>
       <VBox prefHeight="50.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <fx:include source="layout/mainMenus.fxml" />
-            <fx:include source="layout/toolbars.fxml" />
+            <fx:include source="main/layout/mainMenus.fxml" />
+            <fx:include source="main/layout/toolbars.fxml" />
          </children>
       </VBox>
    </top>

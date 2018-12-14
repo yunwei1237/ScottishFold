@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="GBK">
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/Main.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/Dialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/DialogUtils.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/FindDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/FontDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/GotoDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/dialog/ReplaceDialog.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/plugin/Function.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/plugin/Plugin.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/util/DynamicJarClassLoader.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/tcf/editor/util/PluginsLoader.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources/message_en.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/message_zh_CN.properties" charset="UTF-8" />
     <file url="PROJECT" charset="GBK" />

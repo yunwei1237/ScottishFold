@@ -10,9 +10,9 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- Â * åŠ¨æ€ç±»åŠ è½½å™¨
- Â *Â 
- Â */
+ ?* ¶¯Ì¬Àà¼ÓÔØÆ÷
+ ?*?
+ ?*/
 public class DynamicJarClassLoader extends ClassLoader {
 
     private static Logger logger = LoggerFactory.getLogger(DynamicJarClassLoader.class);

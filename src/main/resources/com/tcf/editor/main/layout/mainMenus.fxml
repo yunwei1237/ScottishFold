@@ -4,11 +4,13 @@
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.image.Image?>
-<MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml/1">
+<MenuBar fx:id="menuBar" xmlns:fx="http://javafx.com/fxml/1"
+    fx:controller="com.tcf.editor.controller.MainMenusController"
+>
     <menus>
         <Menu fx:id="file" mnemonicParsing="false" text="%menu.file">
             <items>
-                <MenuItem fx:id="new" mnemonicParsing="false" text="%menu.file.new" >
+                <MenuItem fx:id="newProject" mnemonicParsing="false" text="%menu.file.new" >
                     <accelerator>
                         <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
                     </accelerator>

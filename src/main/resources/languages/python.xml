@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+
+<language xmlns="http://www.tcf.com/ScottishFold"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.tcf.com/ScottishFold language.xsd">
+
+    <languageName>python</languageName>
+    <mark name="keywords">
+        <color colorName="blue"/>
+        <signs value="\b(and|elif|import|return|as|else|in|try|assert|except|is|while|break|finallylambda|with|class|for|not|yield|continuefrom|or|def|global|pass|del|if|raise)\b" />
+    </mark>
+</language>
